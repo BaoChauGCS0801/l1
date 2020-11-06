@@ -64,6 +64,10 @@ var productControl = require('./controllers/product');
 app.use('/product', productControl);
 productControl.params = { configHeader: configHeader, configDB: configDB};
 
+var paymentControl = require('./controllers/payment');
+app.use('/payment', paymentControl);
+paymentControl.params = { configHeader: configHeader, configDB: configDB};
+
 var uploadControl = require('./controllers/upload');
 app.use('/upload', uploadControl);
 uploadControl.params = { configHeader: configHeader, configDB: configDB};
