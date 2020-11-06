@@ -371,7 +371,7 @@ function qrPage(req, res) {
 
             console.log("\n\t", inter[key][1]["address"] );
 
-            str = "https://www.facebook.com/Tu.NN79/";
+            str = "https://shoplego2345.herokuapp.com/";
             sv = new QRCode({
                 content: str,
                 padding: 4,
