@@ -236,7 +236,7 @@ function createUserPage(req, res) {
 }
 //// ...............................................
 app.get('/report', (req,res) => {
-    res.render("pages/report",  {title: "ATN-Shop feedback page",msg:'', configHeader: configHeader, currpage: "Feedback" });  
+    res.render("pages/report",  {title: "ATN-Shop feedback page",msg:'', configHeader: configHeader, currpage: "Report" });  
 });
 app.post('/send' ,(req,res) => {
     var name = req.body.name;
@@ -266,7 +266,7 @@ transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
         return log('Error occurs' + err);
     }else{
-        res.render("pages/feedback",  {title: "ATN-Shop feedback page",msg:"Feedback thành công!!!", configHeader: configHeader, currpage: "Feedback" });  
+        res.render("pages/feedback",  {title: "ATN-Shop feedback page",msg:"Feedback thành công!!!", configHeader: configHeader, currpage: "Report" });  
         return log('Email sent!!!');
     }
     
