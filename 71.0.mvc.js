@@ -234,6 +234,46 @@ function createUserPage(req, res) {
         res.redirect('/login');
     }
 }
+//// ...............................................
+app.get('/report', (req,res) => {
+    res.render("pages/report",  {title: "ATN-Shop feedback page",msg:'', configHeader: configHeader, currpage: "Feedback" });  
+});
+app.post('/send' ,(req,res) => {
+    var name = req.body.name;
+    var subject = req.body.subject;
+    var email = req.body.email;
+    var password = req.body.password;
+    var phone = req.body.phone;
+    var message = req.body.message;
+    require('dotenv').config();
+
+const nodemailer = require('nodemailer');
+const log = console.log;
+let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: email , // abcdeyzryud123@gmail.com
+        pass: password // TODO: your gmail password P12345678
+    }
+});
+let mailOptions = {
+    from: email, // TODO: email sender
+    to: 'chauruby2000@gmail.com' , // TODO: email receiver
+    subject: subject,
+    text: 'Họ và Tên: ' + name + ' Số điện thoại: ' + phone + '\n' + message
+};
+transporter.sendMail(mailOptions, (err, data) => {
+    if (err) {
+        return log('Error occurs' + err);
+    }else{
+        res.render("pages/feedback",  {title: "ATN-Shop feedback page",msg:"Feedback thành công!!!", configHeader: configHeader, currpage: "Feedback" });  
+        return log('Email sent!!!');
+    }
+    
+});
+   
+    
+});
 
 /// ..................................................
 app.get('/login', loginPage);
