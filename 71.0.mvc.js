@@ -266,7 +266,7 @@ transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
         return log('Error occurs' + err);
     }else{
-        res.render("pages/feedback",  {title: "ATN-Shop feedback page",msg:"Feedback thành công!!!", configHeader: configHeader, currpage: "Report" });  
+        res.render("pages/report",  {title: "ATN-Shop feedback page",msg:"Feedback thành công!!!", configHeader: configHeader, currpage: "Report" });  
         return log('Email sent!!!');
     }
     
