@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "5f9a7e52c3f41ab2bea6d213"
+  },
+  "id": "41135",
+  "name": "the lego house of the pop star",
+  "price": "200",
+  "information": "future city"
+},{
+  "_id": {
+    "$oid": "5f9a805ac3f41ab2bea6d214"
+  },
+  "id": "345",
+  "name": "the lego city",
+  "price": "250",
+  "information": "wonderfull"
+},{
+  "_id": {
+    "$oid": "5f9b66255d2a797feab71172"
+  },
+  "id": "31078",
+  "name": "the lego secret of the sea",
+  "price": "300",
+  "information": "venture"
+},{
+  "_id": {
+    "$oid": "5f9b68d15d2a797feab71173"
+  },
+  "id": "41162",
+  "price": "400",
+  "name": "The Lego Ninjago Land Bounty Building Set with Ninja Minifigures",
+  "information": "dragon war"
+},{
+  "_id": {
+    "$oid": "5f9b78b85d2a797feab71174"
+  },
+  "id": "60161",
+  "price": "400",
+  "information": "have you ever seen disney castle?"
+},{
+  "_id": {
+    "$oid": "5fa106698b385a1e97f88a87"
+  },
+  "id": "5134",
+  "name": "Wild Animals",
+  "price": "300",
+  "information": "Look at the miniature animals and you are a giant"
+}]

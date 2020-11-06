@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "5f9b80345d2a797feab71176"
+  }
+},{
+  "_id": {
+    "$oid": "5f9b81258441ec033cbe4270"
+  },
+  "username": "trung@gmail.com",
+  "password": "456"
+},{
+  "_id": {
+    "$oid": "5f9b81bc8441ec033cbe4271"
+  },
+  "username": "chau345@gmail.com",
+  "password": "678"
+},{
+  "_id": {
+    "$oid": "5f9b8a948441ec033cbe4272"
+  },
+  "username": "helloinsertdi@gmail.com",
+  "password": "234"
+},{
+  "_id": {
+    "$oid": "5fa11b3747c21735e41c1b7d"
+  },
+  "username": "chaunhbgcs18571@fpt.edu.vn",
+  "password": "345678"
+},{
+  "_id": {
+    "$oid": "5fa26d821c502c0c0c6118a8"
+  },
+  "username": "keome2020@gmail.com",
+  "password": "345678"
+}]
