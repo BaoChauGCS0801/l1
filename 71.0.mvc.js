@@ -352,24 +352,7 @@ function qrPage(req, res) {
     var xcontent = "";
 
     console.log('\t ... get QR INF ! ');
-    for(var key in inter) {
-        if (key.indexOf("Wi-Fi") >= 0) {             
-            var str = "http://" + 
-                inter[key][1]["address"] + ":"
-                + PORT + "/client";
-            var sv = new QRCode({
-                content: str,
-                padding: 4,
-                width: 512,
-                height: 512,
-                color: "#000000",
-                background: "#ffffff",
-                ecl: "M",
-            }).svg();
-            
-            xcontent += "<br>" + sv;
-
-            console.log("\n\t", inter[key][1]["address"] );
+  
 
             str = "https://shoplego2345.herokuapp.com/";
             sv = new QRCode({
@@ -386,8 +369,6 @@ function qrPage(req, res) {
             res.render("pages/qr", {title: "ATN-Shop QR-Code page", content: xcontent , configHeader: configHeader  , currpage: "QR code - link"  });
 
         }
-    }
-}
 
 /// ------------------ gọi SERVER thực thi
 
